@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Maré Pixel: Pesca da Nazaré</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <section class="game-panel">
+      <canvas id="gameCanvas" width="1200" height="720"></canvas>
+
+      <div id="startScreen" class="overlay">
+        <h1>Maré Pixel: Pesca da Nazaré</h1>
+        <p>Move o rato para subir e descer o anzol. Quando apanhares algo, puxa até à linha da água para recolher.</p>
+        <button id="startButton">Começar</button>
+      </div>
+
+      <div id="gameOverScreen" class="overlay hidden">
+        <h2>Fim do jogo!</h2>
+        <p>Pontuação final: <strong id="finalScore">0</strong></p>
+        <div class="summary-scroll">
+          <canvas id="summaryCanvas" class="summary-canvas" width="780" height="360"></canvas>
+        </div>
+        <p class="small-text">Os alunos podem trocar os desenhos temporários por pixel art na pasta assets.</p>
+        <button id="restartButton">Jogar outra vez</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="game-config.js"></script>
+  <script src="game-draw.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
