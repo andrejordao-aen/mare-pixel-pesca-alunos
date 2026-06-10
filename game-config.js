@@ -369,8 +369,8 @@ window.GAME_CONFIG = {
       chance: 7,
       // chance: peso dentro da categoria "trash".
       // Para aparecer mais lixo no jogo todo, aumenta trash em difficultyLevels.
-      width: 72,
-      height: 72,
+      width: 46,
+      height: 120,
       speedMin: 1.2,
       speedMax: 3.1
     },
